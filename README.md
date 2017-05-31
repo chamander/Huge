@@ -43,3 +43,9 @@ Once set-up, run the project's tests to ensure that everything is currently okay
 ```
 rake project:test
 ```
+
+Consistently styled source code is always a bonus, and Brenton is no exception. Beginning your source files with the template provided will help to make our work shine.
+
+```
+rake xcode:install_templates
+```

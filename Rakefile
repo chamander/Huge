@@ -19,6 +19,16 @@ namespace :project do
 
 end
 
+namespace :xcode do
+
+  desc "Install the custom Xcode file templates"
+  task :install_templates do
+    sh 'mkdir -p ~/Library/Developer/Xcode/Templates/File\ Templates/'
+    sh 'cp -i -R Other/Source/Templates/ ~/Library/Developer/Xcode/Templates/File\ Templates/'
+  end
+
+end
+
 ## Abstract Class - Task
 
 class Task
