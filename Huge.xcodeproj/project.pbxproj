@@ -124,6 +124,7 @@
 				4A8D47DB1EDEB64C009E9B73 /* Frameworks */,
 				4A8D47DC1EDEB64C009E9B73 /* Headers */,
 				4A8D47DD1EDEB64C009E9B73 /* Resources */,
+				4A8D480A1EDEBC13009E9B73 /* Lint Source */,
 			);
 			buildRules = (
 			);
@@ -206,6 +207,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A8D480A1EDEBC13009E9B73 /* Lint Source */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Lint Source";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/env rake project:lint";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A8D47DA1EDEB64C009E9B73 /* Sources */ = {

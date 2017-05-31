@@ -1,0 +1,18 @@
+disabled_rules:
+  - leading_whitespace
+  - opening_brace
+included:
+  - Source
+  - Specs
+excluded:
+  - Carthage
+opt_in_rules:
+  - empty_count
+identifier_name:
+  min_length:
+    warning: 0
+  max_length:
+    warning: 60
+line_length:
+  warning: 90
+  error: 90
