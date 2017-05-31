@@ -10,6 +10,25 @@ final class HugeTests: XCTestCase {
 
 }
 
+final class HugeSpecs: QuickSpec {
+
+  override func spec() {
+
+    describe("Imminent failure") {
+
+      it("fails") {
+        let failure: () -> Bool = { false }
+        expect(failure()).to(beFalse())
+      }
+
+    }
+
+  }
+
+}
+
+import Nimble
+import Quick
 import XCTest
 
 @testable import Huge

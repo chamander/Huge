@@ -10,6 +10,10 @@
 		4A8D47E91EDEB64C009E9B73 /* Huge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8D47DF1EDEB64C009E9B73 /* Huge.framework */; };
 		4A8D47FC1EDEB94E009E9B73 /* Huge.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A8D47FA1EDEB94E009E9B73 /* Huge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A8D48011EDEB958009E9B73 /* HugeSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8D47FF1EDEB958009E9B73 /* HugeSpecs.swift */; };
+		4A8D480E1EDEC2C9009E9B73 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8D480C1EDEC2C9009E9B73 /* Nimble.framework */; };
+		4A8D48101EDEC2D6009E9B73 /* Nimble.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D480C1EDEC2C9009E9B73 /* Nimble.framework */; };
+		4A8D480F1EDEC2C9009E9B73 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8D480D1EDEC2C9009E9B73 /* Quick.framework */; };
+		4A8D48111EDEC2D6009E9B73 /* Quick.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D480D1EDEC2C9009E9B73 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,8 @@
 		4A8D47FF1EDEB958009E9B73 /* HugeSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HugeSpecs.swift; sourceTree = "<group>"; };
 		4A8D48041EDEB9AC009E9B73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A8D48071EDEB9B2009E9B73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8D480C1EDEC2C9009E9B73 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		4A8D480D1EDEC2C9009E9B73 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		4A8D47E81EDEB64C009E9B73 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,6 +50,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8D47E91EDEB64C009E9B73 /* Huge.framework in Frameworks */,
+				4A8D480E1EDEC2C9009E9B73 /* Nimble.framework in Frameworks */,
+				4A8D480F1EDEC2C9009E9B73 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,7 @@
 		4A8D47D51EDEB64C009E9B73 = {
 			isa = PBXGroup;
 			children = (
+				4A8D480B1EDEC2B6009E9B73 /* Frameworks */,
 				4A8D47E01EDEB64C009E9B73 /* Products */,
 				4A8D47F91EDEB94E009E9B73 /* Source */,
 				4A8D47FE1EDEB958009E9B73 /* Specs */,
@@ -100,6 +109,15 @@
 				4A8D48071EDEB9B2009E9B73 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A8D480B1EDEC2B6009E9B73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A8D480C1EDEC2C9009E9B73 /* Nimble.framework */,
+				4A8D480D1EDEC2C9009E9B73 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8D48101EDEC2D6009E9B73 /* Nimble.framework in Resources */,
+				4A8D48111EDEC2D6009E9B73 /* Quick.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +415,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Specs/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.gunkyard.HugeSpecs;
@@ -407,6 +431,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Specs/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.gunkyard.HugeSpecs;
