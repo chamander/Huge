@@ -12,11 +12,11 @@ namespace :project do
     CarthageTask::Bootstrap.execute
   end
 
-end
+  desc "Test the units of the project."
+  task :test do
+    ProjectTask::Units.execute
+  end
 
-desc "Test the units of the project."
-task :test do
-  ProjectTask::Units.execute
 end
 
 ## Abstract Class - Task
