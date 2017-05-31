@@ -22,6 +22,7 @@ end
 ## Abstract Class - Task
 
 class Task
+
 ## Subclasses must implement `@command`, else not a `Task`.
 ##  @command
 
@@ -54,6 +55,7 @@ class Task
 end
 
 class CarthageTask < Task
+
   def initialize (task, arguments)
     super(task, arguments, '--')
     @command = 'carthage'
@@ -64,6 +66,7 @@ class CarthageTask < Task
 end
 
 class ProjectTask < Task
+
   def initialize (task, arguments)
     super(task, arguments, '-')
     @command = 'xcodebuild'
@@ -72,4 +75,5 @@ class ProjectTask < Task
   Platform = "'platform=iOS Simulator,name=iPhone 7'"
 
   Units = ProjectTask.new 'test', [{'scheme' => 'Specs', 'destination' => Platform}]
+
 end
