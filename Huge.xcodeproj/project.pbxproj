@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		4A8D47DF1EDEB64C009E9B73 /* Huge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Huge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A8D47E81EDEB64C009E9B73 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8D47FA1EDEB94E009E9B73 /* Huge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Huge.h; sourceTree = "<group>"; };
 		4A8D47FF1EDEB958009E9B73 /* HugeSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HugeSpecs.swift; sourceTree = "<group>"; };
 		4A8D48041EDEB9AC009E9B73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A8D48071EDEB9B2009E9B73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8D47E81EDEB64C009E9B73 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
