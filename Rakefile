@@ -14,6 +14,11 @@ namespace :project do
 
 end
 
+desc "Test the units of the project."
+task :test do
+  ProjectTask::Units.execute
+end
+
 ## Abstract Class - Task
 
 class Task
@@ -56,4 +61,15 @@ class CarthageTask < Task
 
   Bootstrap = CarthageTask.new 'bootstrap', [{'platform' => 'iphoneos'}, 'no-use-binaries']
 
+end
+
+class ProjectTask < Task
+  def initialize (task, arguments)
+    super(task, arguments, '-')
+    @command = 'xcodebuild'
+  end
+
+  Platform = "'platform=iOS Simulator,name=iPhone 7'"
+
+  Units = ProjectTask.new 'test', [{'scheme' => 'Specs', 'destination' => Platform}]
 end
