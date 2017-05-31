@@ -10,10 +10,10 @@
 		4A8D47E91EDEB64C009E9B73 /* Huge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8D47DF1EDEB64C009E9B73 /* Huge.framework */; };
 		4A8D47FC1EDEB94E009E9B73 /* Huge.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A8D47FA1EDEB94E009E9B73 /* Huge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A8D48011EDEB958009E9B73 /* HugeSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8D47FF1EDEB958009E9B73 /* HugeSpecs.swift */; };
+		4AC048C41EDECE1C004D563A /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8D480C1EDEC2C9009E9B73 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A8D480E1EDEC2C9009E9B73 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8D480C1EDEC2C9009E9B73 /* Nimble.framework */; };
-		4A8D48101EDEC2D6009E9B73 /* Nimble.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D480C1EDEC2C9009E9B73 /* Nimble.framework */; };
+		4AC048C51EDECE1C004D563A /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8D480D1EDEC2C9009E9B73 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A8D480F1EDEC2C9009E9B73 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8D480D1EDEC2C9009E9B73 /* Quick.framework */; };
-		4A8D48111EDEC2D6009E9B73 /* Quick.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4A8D480D1EDEC2C9009E9B73 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +25,21 @@
 			remoteInfo = Huge;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4AC048C31EDECDEE004D563A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4AC048C41EDECE1C004D563A /* Nimble.framework in Embed Frameworks */,
+				4AC048C51EDECE1C004D563A /* Quick.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4A8D47DF1EDEB64C009E9B73 /* Huge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Huge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +175,7 @@
 				4A8D47E41EDEB64C009E9B73 /* Sources */,
 				4A8D47E51EDEB64C009E9B73 /* Frameworks */,
 				4A8D47E61EDEB64C009E9B73 /* Resources */,
+				4AC048C31EDECDEE004D563A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,8 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A8D48101EDEC2D6009E9B73 /* Nimble.framework in Resources */,
-				4A8D48111EDEC2D6009E9B73 /* Quick.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
